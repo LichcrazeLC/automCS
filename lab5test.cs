@@ -15,26 +15,26 @@ namespace Lab5
 	class RedditFunc						
     {
         IWebDriver driver;
-
+   
         [SetUp]
         public void TestSetup()
         {
-            driver = new FirefoxDriver();
+            //driver = new FirefoxDriver();
         }
 
         [Test]
 		public void TestHeader()
         {
-            driver.Navigate().GoToUrl("https://www.reddit.com");
-            driver.FindElement(By.Name("q")).SendKeys("Computer"+ Keys.Return);
-            bool exists = driver.FindElement(By.XPath("//header[1]")) != null;
-            Assert.IsTrue(exists);
+            // driver.Navigate().GoToUrl("https://www.reddit.com");
+            // driver.FindElement(By.Name("q")).SendKeys("Computer"+ Keys.Return);
+            // bool exists = driver.FindElement(By.XPath("//header[1]")) != null;
+            // Assert.IsTrue(exists);
         }
 
         [TearDown]
         public void CleanUp()
         {
-            driver.Quit();
+            //driver.Quit();
         }
 
     }
