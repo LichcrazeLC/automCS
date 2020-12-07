@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="edc98a3f-7a23-4547-84c4-09267f8fb39e" name="cioca@STRIX-SCAR 2020-12-07 12:17:30" runUser="STRIX-SCAR\cioca" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2020-12-07T12:17:30.8357459+02:00" queuing="2020-12-07T12:17:30.8357479+02:00" start="2020-12-07T12:17:03.1242020+02:00" finish="2020-12-07T12:20:15.6997633+02:00" />
+  <TestSettings name="default" id="eb2b4f4a-9bc5-4e70-8749-08e28233dc43">
+    <Deployment runDeploymentRoot="cioca_STRIX-SCAR_2020-12-07_12_17_30" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="635b3cc0-68aa-45f6-b197-c4a225782d61" testId="db39d33b-fa68-7eea-35f2-8020270ba314" testName="DidYouMeanOptionsAppearWhenSearchingForMispelledOrRandomKeywordsInGoogle" computerName="STRIX-SCAR" duration="00:00:23.5629750" startTime="2020-12-07T12:19:52.0000000+02:00" endTime="2020-12-07T12:20:15.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="635b3cc0-68aa-45f6-b197-c4a225782d61">
+      <Output>
+        <StdOut>Given I accessed https://www.google.com/ncr&#xD;
+-&gt; done: GoogleDidYouMeanSteps.GivenIAccessedHttpsWww_Google_ComNcr() (11.1s)&#xD;
+And I typed as;ddd in the search bar&#xD;
+-&gt; done: GoogleDidYouMeanSteps.GivenITypedAsDddInTheSearchBar("as;ddd") (4.1s)&#xD;
+When I press search&#xD;
+-&gt; done: GoogleDidYouMeanSteps.WhenIPressSearch() (6.3s)&#xD;
+Then google proposes at least one Did You Mean option&#xD;
+-&gt; done: GoogleDidYouMeanSteps.ThenGoogleProposesAtLeastOneDidYouMeanOption() (2.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="09b0fbfc-2ddd-4eb8-8c79-1aaf34bf945d" testId="1f2d0d69-322e-df60-c45f-2bbcaa62f62b" testName="TestHeader" computerName="STRIX-SCAR" duration="00:00:00.0001230" startTime="2020-12-07T12:20:15.0000000+02:00" endTime="2020-12-07T12:20:15.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09b0fbfc-2ddd-4eb8-8c79-1aaf34bf945d" />
+    <UnitTestResult executionId="8ac52d01-ff23-4a87-87e2-e81cb79c778b" testId="fe471150-a262-e0af-1208-8f44d1255608" testName="AccessoriesButtonShouldSortAndShowOnlyTheProductsBelongingToTheAccessoriesCategory" computerName="STRIX-SCAR" duration="00:00:26.4310200" startTime="2020-12-07T12:17:04.0000000+02:00" endTime="2020-12-07T12:17:30.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ac52d01-ff23-4a87-87e2-e81cb79c778b">
+      <Output>
+        <StdOut>Given I have navigated to site index page&#xD;
+-&gt; done: AccessoriesCategorySteps.GivenIHaveNavigatedToSiteIndexPage() (14.6s)&#xD;
+And I have clicked on Mens wear&#xD;
+-&gt; done: AccessoriesCategorySteps.GivenIHaveClickedOnMensWear() (4.3s)&#xD;
+When I press the accessories button on the pop-up window&#xD;
+-&gt; done: AccessoriesCategorySteps.WhenIPressTheAccessoriesButtonOnThePop_UpWindow() (5.5s)&#xD;
+Then I should be now shown only products belonging to the accessories category&#xD;
+-&gt; error:   Expected: True&#xD;
+  But was:  False</StdOut>
+        <ErrorInfo>
+          <Message>  Expected: True&#xD;
+  But was:  False&#xD;
+</Message>
+          <StackTrace>   at MyNamespace.AccessoriesCategorySteps.ThenIShouldBeNowShownOnlyProductsBelongingToTheClothesCategory() in C:\Users\cioca\Documents\Uni\automCS\Step Definitions\AccessoriesCategorySteps.cs:line 51&#xD;
+   at lambda_method71(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at automCS.Features.AccessoriesCategoryFeatureInOrderToTestIfProductsGetFilteredByAccessoriesCategoryForMenFeature.ScenarioCleanup()&#xD;
+   at automCS.Features.AccessoriesCategoryFeatureInOrderToTestIfProductsGetFilteredByAccessoriesCategoryForMenFeature.AccessoriesButtonShouldSortAndShowOnlyTheProductsBelongingToTheAccessoriesCategory() in C:\Users\cioca\Documents\Uni\automCS\Features\AccessoriesCategoryFeature.feature:line 9&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2c8c43a9-b7d1-4fea-a9fc-b2eac2f3b0df" testId="f4ae8732-8e5f-e2b8-e30e-cd94f36c0a07" testName="SearchButtonShouldRedirectToThePageWithSearchResultsBasedOnWhatWasEnteredInTheSearchBar" computerName="STRIX-SCAR" duration="00:00:25.9591070" startTime="2020-12-07T12:19:26.0000000+02:00" endTime="2020-12-07T12:19:52.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c8c43a9-b7d1-4fea-a9fc-b2eac2f3b0df">
+      <Output>
+        <StdOut>Given I have navigated to home page&#xD;
+-&gt; done: SearchFeatureSteps.GivenIHaveNavigatedToHomePage() (15.4s)&#xD;
+And I have entered Leather as a keyword I want to search for&#xD;
+-&gt; done: SearchFeatureSteps.GivenIHaveEnteredAKeywordIWantToSearchFor("Leather") (4.0s)&#xD;
+When I press the search button next to the search bar&#xD;
+-&gt; done: SearchFeatureSteps.WhenIPressTheSearchButtonNextToTheSearchBar() (4.5s)&#xD;
+Then I should be redirected to a page with my search results&#xD;
+-&gt; error:   Expected: True&#xD;
+  But was:  False</StdOut>
+        <ErrorInfo>
+          <Message>  Expected: True&#xD;
+  But was:  False&#xD;
+</Message>
+          <StackTrace>   at MyNamespace.SearchFeatureSteps.ThenIShouldBeRedirectedToAPageWithMySearchResults() in C:\Users\cioca\Documents\Uni\automCS\Step Definitions\SearchFeatureSteps.cs:line 52&#xD;
+   at lambda_method101(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at automCS.Features.SearchFeatureInOrderToTestIfSearchBarActuallyWorksReturnsSearchResultsFeature.ScenarioCleanup()&#xD;
+   at automCS.Features.SearchFeatureInOrderToTestIfSearchBarActuallyWorksReturnsSearchResultsFeature.SearchButtonShouldRedirectToThePageWithSearchResultsBasedOnWhatWasEnteredInTheSearchBar() in C:\Users\cioca\Documents\Uni\automCS\Features\SearchFeature.feature:line 9&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c27c3b76-8f4b-4d46-960f-9c1c561be8a3" testId="84a8988b-2c2d-f281-b225-0e124cde66f4" testName="GooglePageShouldOpenAsNormal" computerName="STRIX-SCAR" duration="00:00:12.2613860" startTime="2020-12-07T12:17:56.0000000+02:00" endTime="2020-12-07T12:18:09.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c27c3b76-8f4b-4d46-960f-9c1c561be8a3">
+      <Output>
+        <StdOut>Given I have accessed google by entering https://www.google.co.in in the URL box&#xD;
+-&gt; done: GooglePageAccessSteps.GivenIHaveAccessedGoogleByEnteringHttpsWww_Google_Co_InInTheURLBox() (10.2s)&#xD;
+Then the google page should display properly&#xD;
+-&gt; done: GooglePageAccessSteps.ThenTheGooglePageShouldDisplayProperly() (2.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dc64b5ed-77c7-4707-be5a-fba4f5094ab6" testId="10d13a85-7a72-0142-bb2c-ac325486f1c2" testName="ClothingButtonShouldSortAndShowOnlyTheProductsBelongingToTheClothesCategory" computerName="STRIX-SCAR" duration="00:00:25.9987030" startTime="2020-12-07T12:17:30.0000000+02:00" endTime="2020-12-07T12:17:56.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc64b5ed-77c7-4707-be5a-fba4f5094ab6">
+      <Output>
+        <StdOut>Given I have navigated to site home page&#xD;
+-&gt; done: ClothingCategorySteps.GivenIHaveNavigatedToSiteHomePage() (14.4s)&#xD;
+And I have clicked on Mens wear or Womens wear&#xD;
+-&gt; done: ClothingCategorySteps.GivenIHaveClickedOnMensWear() (4.2s)&#xD;
+When I press the clothing button on the pop-up window&#xD;
+-&gt; done: ClothingCategorySteps.WhenIPressTheClothingButtonOnThePop_UpWindow() (5.3s)&#xD;
+Then I should be now shown only products belonging to the clothes category&#xD;
+-&gt; error:   Expected: True&#xD;
+  But was:  False</StdOut>
+        <ErrorInfo>
+          <Message>  Expected: True&#xD;
+  But was:  False&#xD;
+</Message>
+          <StackTrace>   at MyNamespace.ClothingCategorySteps.ThenIShouldBeNowShownOnlyProductsBelongingToTheClothesCategory() in C:\Users\cioca\Documents\Uni\automCS\Step Definitions\ClothingCategorySteps.cs:line 51&#xD;
+   at lambda_method81(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at automCS.Features.ClothingCategoryFeatureInOrderToTestIfProductsGetFilteredByClothingCategoryFeature.ScenarioCleanup()&#xD;
+   at automCS.Features.ClothingCategoryFeatureInOrderToTestIfProductsGetFilteredByClothingCategoryFeature.ClothingButtonShouldSortAndShowOnlyTheProductsBelongingToTheClothesCategory() in C:\Users\cioca\Documents\Uni\automCS\Features\ClothingCategoryFeature.feature:line 9&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="36b68468-fc88-4608-984c-fa87b66f6b13" testId="5ad99d17-eda2-92fa-a2a7-faba773913c4" testName="QuickViewButtonShouldRedirectToThePageOfTheProductItBelongsToWhereTheProductDetailsWillBeShown" computerName="STRIX-SCAR" duration="00:00:36.9388600" startTime="2020-12-07T12:18:49.0000000+02:00" endTime="2020-12-07T12:19:26.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36b68468-fc88-4608-984c-fa87b66f6b13">
+      <Output>
+        <StdOut>Given I have navigated to mens or womens wear page&#xD;
+-&gt; done: QuickViewFeatureSteps.GivenIHaveNavigatedToMensOrWomensWearPage() (14.1s)&#xD;
+And I have hovered over one of the products displayed on the page&#xD;
+-&gt; done: QuickViewFeatureSteps.GivenIHaveHoveredOverOneOfTheProductsDisplayedOnThePage() (6.3s)&#xD;
+When I press the quick view button that pops up&#xD;
+-&gt; done: QuickViewFeatureSteps.WhenIPressTheQuickViewButtonThatPopsUp() (8.8s)&#xD;
+Then I should be redirected to that product's page&#xD;
+-&gt; error:   Expected: True&#xD;
+  But was:  False</StdOut>
+        <ErrorInfo>
+          <Message>  Expected: True&#xD;
+  But was:  False&#xD;
+</Message>
+          <StackTrace>   at MyNamespace.QuickViewFeatureSteps.ThenIShouldBeRedirectedToThatProductsPage() in C:\Users\cioca\Documents\Uni\automCS\Step Definitions\QuickViewFeatureSteps.cs:line 59&#xD;
+   at lambda_method97(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at automCS.Features.QuickViewButtonFeatureInOrderToTestIfQuickViewRedirectsToTheCorrectProductFeature.ScenarioCleanup()&#xD;
+   at automCS.Features.QuickViewButtonFeatureInOrderToTestIfQuickViewRedirectsToTheCorrectProductFeature.QuickViewButtonShouldRedirectToThePageOfTheProductItBelongsToWhereTheProductDetailsWillBeShown() in C:\Users\cioca\Documents\Uni\automCS\Features\QuickViewFeature.feature:line 9&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="def987db-4c49-4466-a842-8202428c1141" testId="9bbdee39-9805-f600-e791-64d8104b47e3" testName="NothingShouldOccurWhenYouClickSearchOnTheGooglePageWithNothingTypedInTheSearchBox" computerName="STRIX-SCAR" duration="00:00:19.1767340" startTime="2020-12-07T12:18:29.0000000+02:00" endTime="2020-12-07T12:18:49.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="def987db-4c49-4466-a842-8202428c1141">
+      <Output>
+        <StdOut>Given I have accessed https://www.google.co.in&#xD;
+-&gt; done: GoogleSearchNothingSteps.GivenIHaveAccessedGoogleByEnteringHttpsWww_Google_Co_InInTheURLBox() (10.8s)&#xD;
+And I didn't enter anything in the search bar&#xD;
+-&gt; done: GoogleSearchNothingSteps.GivenIDidntEnterAnythingInTheSearchBar() (0.0s)&#xD;
+When I press the search button&#xD;
+-&gt; done: GoogleSearchNothingSteps.WhenIPressTheSearchButton() (6.3s)&#xD;
+Then nothing occurs&#xD;
+-&gt; done: GoogleSearchNothingSteps.ThenNothingOccurs() (2.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e8236fcb-0335-4366-bec0-80ca56e1125e" testId="78086658-0ad6-1e95-de9d-9e43d545cfab" testName="GoogleReturnsTheCorrectNumberOfSearchResultsPerPageWhenSearchingForARandomKeyword" computerName="STRIX-SCAR" duration="00:00:20.9561550" startTime="2020-12-07T12:18:09.0000000+02:00" endTime="2020-12-07T12:18:29.0000000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8236fcb-0335-4366-bec0-80ca56e1125e">
+      <Output>
+        <StdOut>Given I accessed the google home page https://www.google.com/ncr&#xD;
+-&gt; done: GoogleSearchResultNumberSteps.GivenIAccessedTheGoogleHomePageHttpsWww_Google_ComNcr() (10.5s)&#xD;
+And I searched for anything in the search bar&#xD;
+-&gt; done: GoogleSearchResultNumberSteps.GivenISearchedForAnythingInTheSearchBar("anything") (4.1s)&#xD;
+When I search&#xD;
+-&gt; done: GoogleSearchResultNumberSteps.WhenISearch() (6.4s)&#xD;
+Then google returns the right result number&#xD;
+-&gt; done: GoogleSearchResultNumberSteps.ThenGoogleReturnsTheRightResultNumber() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestHeader" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="1f2d0d69-322e-df60-c45f-2bbcaa62f62b">
+      <Execution id="09b0fbfc-2ddd-4eb8-8c79-1aaf34bf945d" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="Lab5.RedditFunc" name="TestHeader" />
+    </UnitTest>
+    <UnitTest name="AccessoriesButtonShouldSortAndShowOnlyTheProductsBelongingToTheAccessoriesCategory" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="fe471150-a262-e0af-1208-8f44d1255608">
+      <Execution id="8ac52d01-ff23-4a87-87e2-e81cb79c778b" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="automCS.Features.AccessoriesCategoryFeatureInOrderToTestIfProductsGetFilteredByAccessoriesCategoryForMenFeature" name="AccessoriesButtonShouldSortAndShowOnlyTheProductsBelongingToTheAccessoriesCategory" />
+    </UnitTest>
+    <UnitTest name="DidYouMeanOptionsAppearWhenSearchingForMispelledOrRandomKeywordsInGoogle" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="db39d33b-fa68-7eea-35f2-8020270ba314">
+      <Execution id="635b3cc0-68aa-45f6-b197-c4a225782d61" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="automCS.Features.WhenSearchKeywordDoesntMakeAnySenseGoogleProposesSeveralDidYouMeanOptionsFeature" name="DidYouMeanOptionsAppearWhenSearchingForMispelledOrRandomKeywordsInGoogle" />
+    </UnitTest>
+    <UnitTest name="GoogleReturnsTheCorrectNumberOfSearchResultsPerPageWhenSearchingForARandomKeyword" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="78086658-0ad6-1e95-de9d-9e43d545cfab">
+      <Execution id="e8236fcb-0335-4366-bec0-80ca56e1125e" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="automCS.Features.MakeSureTheSearchResultNumberIsCorrectFeature" name="GoogleReturnsTheCorrectNumberOfSearchResultsPerPageWhenSearchingForARandomKeyword" />
+    </UnitTest>
+    <UnitTest name="QuickViewButtonShouldRedirectToThePageOfTheProductItBelongsToWhereTheProductDetailsWillBeShown" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="5ad99d17-eda2-92fa-a2a7-faba773913c4">
+      <Execution id="36b68468-fc88-4608-984c-fa87b66f6b13" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="automCS.Features.QuickViewButtonFeatureInOrderToTestIfQuickViewRedirectsToTheCorrectProductFeature" name="QuickViewButtonShouldRedirectToThePageOfTheProductItBelongsToWhereTheProductDetailsWillBeShown" />
+    </UnitTest>
+    <UnitTest name="NothingShouldOccurWhenYouClickSearchOnTheGooglePageWithNothingTypedInTheSearchBox" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="9bbdee39-9805-f600-e791-64d8104b47e3">
+      <Execution id="def987db-4c49-4466-a842-8202428c1141" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="automCS.Features.NothingHappensWhenYouClickSearchWhenNothingIsTypedInOnTheGooglePageFeature" name="NothingShouldOccurWhenYouClickSearchOnTheGooglePageWithNothingTypedInTheSearchBox" />
+    </UnitTest>
+    <UnitTest name="ClothingButtonShouldSortAndShowOnlyTheProductsBelongingToTheClothesCategory" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="10d13a85-7a72-0142-bb2c-ac325486f1c2">
+      <Execution id="dc64b5ed-77c7-4707-be5a-fba4f5094ab6" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="automCS.Features.ClothingCategoryFeatureInOrderToTestIfProductsGetFilteredByClothingCategoryFeature" name="ClothingButtonShouldSortAndShowOnlyTheProductsBelongingToTheClothesCategory" />
+    </UnitTest>
+    <UnitTest name="GooglePageShouldOpenAsNormal" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="84a8988b-2c2d-f281-b225-0e124cde66f4">
+      <Execution id="c27c3b76-8f4b-4d46-960f-9c1c561be8a3" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="automCS.Features.GooglePageOpensIfEntering_Co_InDomainInTheURLBoxFeature" name="GooglePageShouldOpenAsNormal" />
+    </UnitTest>
+    <UnitTest name="SearchButtonShouldRedirectToThePageWithSearchResultsBasedOnWhatWasEnteredInTheSearchBar" storage="c:\users\cioca\documents\uni\automcs\bin\debug\net5.0\automcs.dll" id="f4ae8732-8e5f-e2b8-e30e-cd94f36c0a07">
+      <Execution id="2c8c43a9-b7d1-4fea-a9fc-b2eac2f3b0df" />
+      <TestMethod codeBase="C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll" adapterTypeName="executor://nunit3testexecutor/" className="automCS.Features.SearchFeatureInOrderToTestIfSearchBarActuallyWorksReturnsSearchResultsFeature" name="SearchButtonShouldRedirectToThePageWithSearchResultsBasedOnWhatWasEnteredInTheSearchBar" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="db39d33b-fa68-7eea-35f2-8020270ba314" executionId="635b3cc0-68aa-45f6-b197-c4a225782d61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f2d0d69-322e-df60-c45f-2bbcaa62f62b" executionId="09b0fbfc-2ddd-4eb8-8c79-1aaf34bf945d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe471150-a262-e0af-1208-8f44d1255608" executionId="8ac52d01-ff23-4a87-87e2-e81cb79c778b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4ae8732-8e5f-e2b8-e30e-cd94f36c0a07" executionId="2c8c43a9-b7d1-4fea-a9fc-b2eac2f3b0df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84a8988b-2c2d-f281-b225-0e124cde66f4" executionId="c27c3b76-8f4b-4d46-960f-9c1c561be8a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10d13a85-7a72-0142-bb2c-ac325486f1c2" executionId="dc64b5ed-77c7-4707-be5a-fba4f5094ab6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ad99d17-eda2-92fa-a2a7-faba773913c4" executionId="36b68468-fc88-4608-984c-fa87b66f6b13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9bbdee39-9805-f600-e791-64d8104b47e3" executionId="def987db-4c49-4466-a842-8202428c1141" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78086658-0ad6-1e95-de9d-9e43d545cfab" executionId="e8236fcb-0335-4366-bec0-80ca56e1125e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="9" passed="5" failed="4" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit VS Adapter 2.3.0.0 executing tests is started&#xD;
+NUnit VS Adapter 2.3.0.0 executing tests is finished&#xD;
+NUnit Adapter 3.17.0.0: Test execution started&#xD;
+Running all tests in C:\Users\cioca\Documents\Uni\automCS\bin\Debug\net5.0\automCS.dll&#xD;
+   NUnit3TestExecutor discovered 9 of 9 NUnit test cases&#xD;
+Given I have navigated to site index page&#xD;
+-&gt; done: AccessoriesCategorySteps.GivenIHaveNavigatedToSiteIndexPage() (14.6s)&#xD;
+And I have clicked on Mens wear&#xD;
+-&gt; done: AccessoriesCategorySteps.GivenIHaveClickedOnMensWear() (4.3s)&#xD;
+When I press the accessories button on the pop-up window&#xD;
+-&gt; done: AccessoriesCategorySteps.WhenIPressTheAccessoriesButtonOnThePop_UpWindow() (5.5s)&#xD;
+Then I should be now shown only products belonging to the accessories category&#xD;
+-&gt; error:   Expected: True&#xD;
+  But was:  False&#xD;
+&#xD;
+&#xD;
+Given I have navigated to site home page&#xD;
+-&gt; done: ClothingCategorySteps.GivenIHaveNavigatedToSiteHomePage() (14.4s)&#xD;
+And I have clicked on Mens wear or Womens wear&#xD;
+-&gt; done: ClothingCategorySteps.GivenIHaveClickedOnMensWear() (4.2s)&#xD;
+When I press the clothing button on the pop-up window&#xD;
+-&gt; done: ClothingCategorySteps.WhenIPressTheClothingButtonOnThePop_UpWindow() (5.3s)&#xD;
+Then I should be now shown only products belonging to the clothes category&#xD;
+-&gt; error:   Expected: True&#xD;
+  But was:  False&#xD;
+&#xD;
+&#xD;
+Given I have accessed google by entering https://www.google.co.in in the URL box&#xD;
+-&gt; done: GooglePageAccessSteps.GivenIHaveAccessedGoogleByEnteringHttpsWww_Google_Co_InInTheURLBox() (10.2s)&#xD;
+Then the google page should display properly&#xD;
+-&gt; done: GooglePageAccessSteps.ThenTheGooglePageShouldDisplayProperly() (2.0s)&#xD;
+&#xD;
+Given I accessed the google home page https://www.google.com/ncr&#xD;
+-&gt; done: GoogleSearchResultNumberSteps.GivenIAccessedTheGoogleHomePageHttpsWww_Google_ComNcr() (10.5s)&#xD;
+And I searched for anything in the search bar&#xD;
+-&gt; done: GoogleSearchResultNumberSteps.GivenISearchedForAnythingInTheSearchBar("anything") (4.1s)&#xD;
+When I search&#xD;
+-&gt; done: GoogleSearchResultNumberSteps.WhenISearch() (6.4s)&#xD;
+Then google returns the right result number&#xD;
+-&gt; done: GoogleSearchResultNumberSteps.ThenGoogleReturnsTheRightResultNumber() (0.0s)&#xD;
+&#xD;
+Given I have accessed https://www.google.co.in&#xD;
+-&gt; done: GoogleSearchNothingSteps.GivenIHaveAccessedGoogleByEnteringHttpsWww_Google_Co_InInTheURLBox() (10.8s)&#xD;
+And I didn't enter anything in the search bar&#xD;
+-&gt; done: GoogleSearchNothingSteps.GivenIDidntEnterAnythingInTheSearchBar() (0.0s)&#xD;
+When I press the search button&#xD;
+-&gt; done: GoogleSearchNothingSteps.WhenIPressTheSearchButton() (6.3s)&#xD;
+Then nothing occurs&#xD;
+-&gt; done: GoogleSearchNothingSteps.ThenNothingOccurs() (2.0s)&#xD;
+&#xD;
+Given I have navigated to mens or womens wear page&#xD;
+-&gt; done: QuickViewFeatureSteps.GivenIHaveNavigatedToMensOrWomensWearPage() (14.1s)&#xD;
+And I have hovered over one of the products displayed on the page&#xD;
+-&gt; done: QuickViewFeatureSteps.GivenIHaveHoveredOverOneOfTheProductsDisplayedOnThePage() (6.3s)&#xD;
+When I press the quick view button that pops up&#xD;
+-&gt; done: QuickViewFeatureSteps.WhenIPressTheQuickViewButtonThatPopsUp() (8.8s)&#xD;
+Then I should be redirected to that product's page&#xD;
+-&gt; error:   Expected: True&#xD;
+  But was:  False&#xD;
+&#xD;
+&#xD;
+Given I have navigated to home page&#xD;
+-&gt; done: SearchFeatureSteps.GivenIHaveNavigatedToHomePage() (15.4s)&#xD;
+And I have entered Leather as a keyword I want to search for&#xD;
+-&gt; done: SearchFeatureSteps.GivenIHaveEnteredAKeywordIWantToSearchFor("Leather") (4.0s)&#xD;
+When I press the search button next to the search bar&#xD;
+-&gt; done: SearchFeatureSteps.WhenIPressTheSearchButtonNextToTheSearchBar() (4.5s)&#xD;
+Then I should be redirected to a page with my search results&#xD;
+-&gt; error:   Expected: True&#xD;
+  But was:  False&#xD;
+&#xD;
+&#xD;
+Given I accessed https://www.google.com/ncr&#xD;
+-&gt; done: GoogleDidYouMeanSteps.GivenIAccessedHttpsWww_Google_ComNcr() (11.1s)&#xD;
+And I typed as;ddd in the search bar&#xD;
+-&gt; done: GoogleDidYouMeanSteps.GivenITypedAsDddInTheSearchBar("as;ddd") (4.1s)&#xD;
+When I press search&#xD;
+-&gt; done: GoogleDidYouMeanSteps.WhenIPressSearch() (6.3s)&#xD;
+Then google proposes at least one Did You Mean option&#xD;
+-&gt; done: GoogleDidYouMeanSteps.ThenGoogleProposesAtLeastOneDidYouMeanOption() (2.0s)&#xD;
+&#xD;
+NUnit Adapter 3.17.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="STRIX-SCAR" outcome="Error" timestamp="2020-12-07T12:17:03.7292794+02:00">
+        <Text>Exception System.TypeLoadException, Exception thrown executing tests</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
